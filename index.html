@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>HTML5_Form</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    </head>
+    <body>
+        <form>
+            <div class="container">
+                <div class="card"> 
+                    <div class="card-header post-header">
+                        <h5>Payment form example<h5>
+                    </div>
+                    <div class="card-body">
+                            <div class="alert alert-danger fw-semibold" role="alert">
+                                Some fields are missing 
+                            </div>    
+                        <div class= "row Tarjet-Info" >
+                            <div class="col-5 Card# mb-3">
+                                <label for="Card#">Card #</label>
+                                <input type="Numbers" class="form-control" id="Card#" placeholder="XXXX-XXXX-XXXX-XXXX">
+                            </div>
+                            <div class="col-3 CVC# mb-3">
+                                <label for="CVC#">CVC #</label>
+                                <input type="Numbers" class="form-control" id="CVC#" placeholder="0000">
+                            </div>
+                            <div class="clo-1 dollar mb-3">
+                                <i class="fa fa-dollar-sign"></i>
+                            </div>
+                            <div class="col-3 Amount mb-3">
+                                <label for="Amount">Amount</label>
+                                <input type="Numbers" class="form-control" id="Amount" placeholder="Amount">
+                            </div>
+                        </div>    
+                        <div class= "row Personal-Info" >
+                            <div class="col-6 Name mb-3">
+                                <label for="Name">First Name</label>
+                                <input type="text" class="form-control" id="Name" placeholder="">
+                            </div>
+                            <div class="col-6 Last mb-3">
+                                <label for="Last">Last Name</label>
+                                <input type="text" class="form-control" id="Last" placeholder="">
+                            </div>    
+                        </div>
+                        <div class= "row Personal-Place" >
+                            <div class="col-6 City mb-3">
+                                <label for="City">City</label>
+                                <input type="text" class="form-control" id="City" placeholder="">
+                            </div>
+                            <div class="col-3 State mb-3">
+                                <label for="State">State</label>
+                                <select class="form-control" size="auto" id="selectpicker1" required>
+                                    <option value="" disabled selected>Pick a state</option>
+                                    <option value="opt01">California</option>
+                                    <option value="opt02">Florida</option>
+                                    <option value="opt01">Texas</option>
+                                    <option value="opt02">Washington</option>
+                                </select>
+                            </div>
+                            <div class="col-3 Last mb-3">
+                                <label for="Postal">Postal</label>
+                                <input type="text" class="form-control" id="Postal" placeholder="">
+                            </div>   
+                        </div>  
+                        <div class="row Payment-Message">
+                            <div class="col-6 Payment mb-3">
+                                <h6>We accept</h6>
+                                <div class="tarjet">
+                                <div class="form-check form-check-inline bg">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1"><i class="fab fa-cc-mastercard"></i></label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2"><i class="fab fa-cc-visa"></i></label>
+                                    </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                    <label class="form-check-label" for="inlineRadio3"><i class="fab fa-cc-diners-club"></i></label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+                                    <label class="form-check-label" for="inlineRadio4"><i class="fab fa-cc-amex"></i></label>
+                                </div>   
+                                </div>
+                            </div>    
+                            <div class="col-6 Message mb-3">
+                                <label for="Message">Message</label>
+                                <textarea class="form-control" type="text" id="Message"  style="height: 100px"></textarea>
+                            </div>
+                        </div>        
+                    </div>       
+                    <div class="card-footer">
+                        <div class="row button">
+                            <div class="button mb-3">
+                                <button type="button" class="btn btn-secondary">Cancel</button>
+                                <button type="button" class="btn btn-primary">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>        
+            </div>  
+        </form>    
+    </body>  
+</html>    
